@@ -1,0 +1,266 @@
+/* Estilos CSS*/
+nav { /*sirve para la barra horizontal */
+  overflow: hidden; /* para que no interumpa otros atributos*/
+  background-color: #333; /* Color de fondo de la barra */
+}
+
+a {
+  float: left; /* Hace que los elementos de la lista estén uno al lado del otro */
+}
+
+a {
+  display: block; /* Esta propiedad establece el elemento como un bloque de ancho completo que ocupa toda la línea horizontal. */
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none; /*elimina decoracion*/
+}
+
+a:hover {
+  background-color: #111; /* Color de fondo al pasar el cursor */
+}
+.titulo1{ /*clase para el h1*/
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace; /*Estilo de letra*/
+  font-style: oblique;
+  /*es para la an imacion de la pagina*/
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 60%;
+  position: relative;
+  animation: desplazar 4s linear infinite;
+  }
+  
+  @keyframes desplazar {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+.imagen-centrada { /*clase para centrar la imagen de bienvenida y no afecte a la de la tabla*/
+  width: 550px; /*tamaño*/
+  height: 400px;/*tamaño*/
+  display: block; /* Hace que la imagen sea un elemento en línea */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  border: 2px solid #000000; /* Agrega un borde sólido de 2px de ancho de color negro */
+  padding: 10px; /* Añade un relleno interior de 10px para separar la imagen del borde */
+}
+
+footer { /*el pie, lo utilize para los derechos reservados*/
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.titulo2{ /*Lo use para el h1 el titulo de quienes somos*/
+  color: #ffffff; /* blanco */
+  background-color: #000000; /* verde */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgb(245, 245, 245);
+  margin-bottom: 20px;
+}
+
+h2{ 
+  color: #ebebeb; /* blanco */
+  background-color: #000000; /* verde */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+
+#destacado{ /*id de como se usa final de quienes somos*/
+  color: darkred;
+}
+
+body{
+  background-color: #E8E8E8; /* gris claro */
+}
+
+.borde{
+  border: 2px solid #000000; /* Agrega un borde sólido de 2px de ancho de color negro */
+  padding: 10px; /* Añade un relleno interior de 10px para separar el texto del borde */
+}
+
+caption{  
+    color: #ebebeb; /* blanco */
+    background-color: #000000; /* verde */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+th{     /*elementos de las tablas*/
+    font-size: 25px;
+    color: rgba(9, 8, 8, 0.935);
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(160, 160, 158);
+}
+
+td{   /*elementos de las tablas*/
+    color: rgba(4, 2, 10, 0.935);
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(241, 238, 238);
+}
+
+.seccion-ubicacion {  /*muestra la imagen de la ubicacion en toda la pantalla*/
+  background-image: url(../Imagen/ubicacion.png);   /*direccion de la imagen*/
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+table{
+  border-collapse: collapse; /* combina los bordes de las celdas */
+  border: 2px solid #ccc;
+  width: 100%;
+  font-weight: bold; /* agrega negrita al borde de la tabla */
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Estilos del formulario */
+form {
+  background-color: white; /* Fondo blanco */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para resaltar el formulario */
+  padding: 20px; /* Espaciado interno para los elementos del formulario */
+  margin: 20px auto; /* Margen exterior para centrar el formulario en la página */
+  max-width: 500px; /* Ancho máximo del formulario */
+}
+
+/* Estilos para las etiquetas del formulario */
+label {
+  display: block; /* Hace que cada etiqueta aparezca en una línea separada */
+  margin-bottom: 5px; /* Agrega un pequeño margen inferior a cada etiqueta */
+}
+
+/* Estilos para los elementos del formulario */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  width: 100%; /* Ancho del 100% para ajustarse al ancho del contenedor */
+  padding: 10px; /* Espaciado interno para los elementos */
+  border-radius: 3px; /* Bordes redondeados */
+  border: 1px solid #666666; /* Borde sólido de color gris oscuro */
+  margin-bottom: 15px; /* Agrega un margen inferior a cada elemento del formulario */
+  box-sizing: border-box; /* Asegura que el ancho incluya los bordes y el espaciado interno */
+  font-size: 16px; /* Tamaño de fuente para los elementos */
+}
+
+/* Estilos para los elementos de formulario cuando se seleccionan */
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  outline: none; /* Quita el contorno del elemento cuando se selecciona */
+  border-color: #8bc9ff; /* Color del borde cuando se selecciona */
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.1); /* Sombra para resaltar el elemento seleccionado */
+}
+
+/* Estilos para el primer elemento de una lista de opciones */
+select option:first-child {
+  color: #ccc; /* Color gris claro para la primera opción de una lista */
+}
+
+/* Estilos para el botón de envío */
+input[type="submit"] {
+  background-color: #3f3f3f; /* Fondo gris oscuro */
+  color: white; /* Texto blanco */
+  border: none; /* Quita el borde */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 3px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a una mano al pasar el mouse */
+}
+
+/* Estilos para el botón de reinicio */
+input[type="reset"] {
+  background-color: #3f3f3f; /* Fondo gris oscuro */
+  color: white; /* Texto blanco */
+  border: none; /* Quita el borde */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 3px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a una mano al pasar el mouse */
+}
+/* Estilos para la sección de eliminar*/
+.eliminar-campos {
+  margin-top: 15px;
+}
+
+.eliminar-campos label {
+  margin-right: 10px;
+}
+
+.eliminar-campos input[type="checkbox"] {
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.form{
+  text-align: center;
+  margin-top: 20px;
+}
+
+#banner {
+	width: 100%;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+  }
+  
+  #banner img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+  }
+  
+  #banner img.active {
+	opacity: 1;
+  }
+  
+  #banner .content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: #fff;
+  }
+  
+  #banner h1 {
+	font-size: 3em;
+	margin: 0;
+  }
+  
+  #banner p {
+	font-size: 1.5em;
+	margin: 0;
+	margin-bottom: 20px;
+  }
+  
+  #banner button {
+	background-color: #008CBA;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
