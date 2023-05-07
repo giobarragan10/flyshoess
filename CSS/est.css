@@ -1,0 +1,44 @@
+/* Estilo animalista */
+body {
+	background-color: #d1d1d1; /* Color de fondo para imitar la piel de un tigre */
+}
+
+h1 {
+	font-family: 'Helvetica Neue', sans-serif; /* Fuente sans-serif para un aspecto moderno */
+	font-size: 3rem; /* Tamaño grande para el título */
+	color: #1a1a1a; /* Color oscuro para el título */
+	margin: 1rem auto; /* Margen centrado para el título */
+	text-align: center; /* Centrar el texto del título */
+}
+
+iframe {
+	width: 70%; /* Ancho del marco o ventana interactiva */
+	height: 400px; /* Altura del marco o ventana interactiva */
+	display: block; /* Hacer que el marco o ventana interactiva sea un bloque */
+	margin: auto; /* Centrar el marco o ventana interactiva en la página */
+	border: 2px solid #ffffff; /* Agregar un borde naranja para resaltar */
+	border-radius: 10px; /* Redondear las esquinas del borde */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregar sombra al marco o ventana interactiva */
+}
+
+iframe video {
+	width: 100%; /* Ancho del reproductor de video */
+	height: 100%; /* Altura del reproductor de video */
+	display: block; /* Hacer que el reproductor de video sea un bloque */
+	border: none; /* Quitar el borde del reproductor de video */
+	border-radius: 10px; /* Redondear las esquinas del reproductor de video */
+}
+
+
+a {
+	display: block; /* Esta propiedad establece el elemento como un bloque de ancho completo que ocupa toda la línea horizontal. */
+	color: white;
+	text-align: center;
+	padding: 16px 16px;
+	text-decoration: none; /*elimina decoracion*/
+  }
+  
+  a:hover {
+	background-color: #111; /* Color de fondo al pasar el cursor */
+}
+	
