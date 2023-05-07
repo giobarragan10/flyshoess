@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de usuario</title>
+    <link href="../CSS/ejemplodejava.css" rel="stylesheet">
+    <script>
+          //en action donde se va a la pagina principal lo cambie ya que
+          // es necesario un documento en php para guaradr el usuario 
+        function validarFormulario() {
+            var nombre = document.forms["registro"]["nombre"].value;
+            var apellido = document.forms["registro"]["apellido"].value;
+            var email = document.forms["registro"]["email"].value;
+            var direccion = document.forms["registro"]["direccion"].value;
+            var ciudad = document.forms["registro"]["ciudad"].value;
+            var codigo_postal = document.forms["registro"]["codigo_postal"].value;
+            var telefono = document.forms["registro"]["telefono"].value;
+            var password = document.forms["registro"]["password"].value;
+            var confirmar_password = document.forms["registro"]["confirmar_password"].value;
+
+            if (nombre == "" || apellido == "" || email == "" || direccion == "" || ciudad == "" || codigo_postal == "" || telefono == "" || password == "" || confirmar_password == "") {
+                alert("Todos los campos son requeridos");
+                return false;
+            }
+
+            if (isNaN(codigo_postal) || codigo_postal.length != 5) {
+                alert("El código postal debe ser un número de 5 dígitos");
+                return false;
+            }
+
+            if (isNaN(telefono) || telefono.length != 10) {
+                alert("El número de teléfono debe ser un número de 10 dígitos");
+                return false;
+            }
+
+            if (password != confirmar_password) {
+                alert("Las contraseñas no coinciden");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h1>Registro para tener acceso a FlyShoes</h2>
+    <form name="registro" onsubmit="return validarFormulario()" action="javaejemplo.html" method="post"> 
+        <label>Nombre:</label><br>
+        <input type="text" name="nombre"><br><br>
+        <label>Apellido:</label><br>
+        <input type="text" name="apellido"><br><br>
+        <label>Email:</label><br>
+        <input type="email" name="email"><br><br>
+        <label>Dirección:</label><br>
+        <input type="text" name="direccion"><br><br>
+        <label>Ciudad:</label><br>
+        <input type="text" name="ciudad"><br><br>
+        <label>Código Postal:</label><br>
+        <input type="text" name="codigo_postal"><br><br>
+        <label>Teléfono:</label><br>
+        <input type="text" name="telefono"><br><br>
+        <label>Contraseña:</label><br>
+        <input type="password" name="password"><br><br>
+        <label>Confirmar Contraseña:</label><br>
+        <input type="password" name="confirmar_password"><br><br>
+        <input type="submit" value="Registrarse">
+    </form>
+</body>
+</html>

@@ -1,0 +1,76 @@
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="UTF-8" />
+        <title>Formulario de venta de tenis</title>
+        <link href="../CSS/general.css" rel="stylesheet">
+      </head>
+      <body>
+        <h1 class="form">Formulario de venta de tenis</h1>
+        <form>
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" required />
+    
+          
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required />
+    
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required />
+    
+          <label for="direccion">Dirección de envío:</label>
+          <textarea id="direccion" name="direccion" required></textarea>
+    
+          <label for="talla">Talla:</label>
+          <select id="talla" name="talla" required>
+            <option value="">Selecciona una talla</option>
+            <option> 40 </option>
+            <option> 39</option>
+            <option> 38</option>
+            <option> 37</option>
+            <option> 36</option>
+            <option> 35</option>
+          </select>
+          <p>
+            <strong> Que modelo quiere</strong> <br>
+            <label> Adidas
+            <input  name=" Como sitio "type="radio" value="Adidas" >
+            </label>
+            <label> Nike
+            <input  name=" Como sitio "type="radio" value="Nike" checked>
+            </label>
+            <label> Jordan
+            <input  name=" Como sitio "type="radio" value="Jordan" >
+            </label>
+            <label> Deportivos
+            <input  name=" Como sitio "type="radio" value="Deportivos" >
+            </label>
+            <label> Puma
+            <input  name=" Como sitio "type="radio" value="Puma" >
+            </label>
+          </p>
+    
+          <label for="comentarios">Comentarios adicionales:</label>
+          <textarea id="comentarios" name="comentarios"></textarea>
+
+  <br>
+  <label for="Cantidad a pagar">Cantidad de articulos:</label>
+  <input type="number" id="cantidad" name="cantidad" min="1" max="100" required>
+  <br>
+  <!-- Agrega el botón de pago de PayPal -->
+  <button type="submit" name="submit">Pagar con PayPal</button>
+  <button type="submit" name="submit">Tarjeta de debito</button>
+  <button type="submit" name="submit">Tarjeta de credito</button>
+  <button type="submit" name="submit">Tiendas OXXO</button>
+
+  <br>
+  <br>
+    
+          <input type="submit" value="Enviar" />
+
+          <input type="reset"value="Borrar">
+        </form>
+        <a href="index.html">Regresar</a>
+      </body>
+    </html>
+    
